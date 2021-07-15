@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "start": "cypress run --headless --spec cypress/integration/automate.spec.js && npm run server"
+    "start": "cypress run --headless --spec cypress/integration/automate.spec.js && npm run server",
+    "send-msg": "cypress run --browser=chrome --spec cypress/integration/sendMsg.spec.js",
+    "cypress:run": "cypress open"
   },
   "keywords": [
     "automation",
